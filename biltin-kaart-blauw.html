@@ -51,7 +51,7 @@
   .kaart-body {
     background: var(--kaart-achtergrond);
     padding: 20px;
-    min-height: 400px;
+    height: 400px;
     color: var(--tekst-kleur);
     font-size: 14px;
     line-height: 1.7;
@@ -79,7 +79,7 @@
   const params = new URLSearchParams(window.location.search);
   const hoogte = params.get('hoogte');
   if (hoogte) {
-    document.querySelector('.kaart-body').style.minHeight = hoogte + 'px';
+    document.querySelector('.kaart-body').style.height = hoogte + 'px';
   }
   // Breedte instellen via URL parameter: ?breedte=500
   const breedte = params.get('breedte');
