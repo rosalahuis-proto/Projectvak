@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl" style="background:transparent;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* =====================
+     AANPASBARE INSTELLINGEN
+     ===================== */
+
+  :root {
+    --kaart-breedte: 420px;          /* breedte van de kaart */
+    --header-kleur-links: #aaff00;   /* gradient linkskleur header */
+    --header-kleur-rechts: #66dd00;  /* gradient rechtskleur header */
+    --header-tekstkleur: #ffffff;    /* tekstkleur van de titel */
+    --kaart-achtergrond: #0d1b3e;    /* achtergrond van de kaart */
+    --rand-kleur: rgba(255,255,255,0.15); /* kleur van de rand */
+    --tekst-kleur: #e8edf8;          /* kleur van de tekst */
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .kaart {
+    width: var(--kaart-breedte);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1.5px solid var(--rand-kleur);
+  }
+
+  .kaart-header {
+    background: linear-gradient(135deg, var(--header-kleur-links), var(--header-kleur-rechts));
+    padding: 14px 20px;
+    border-radius: 10px 10px 0 0;
+    min-height: 52px;
+  }
+
+  .kaart-titel {
+    color: var(--header-tekstkleur);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .kaart-body {
+    background: var(--kaart-achtergrond);
+    padding: 20px;
+    min-height: 400px;
+    color: var(--tekst-kleur);
+    font-size: 14px;
+    line-height: 1.7;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-radius: 0 0 14px 14px;
+  }
+
+  /* Voeg hier tekst, bulletpoints etc. toe */
+</style>
+</head>
+<body style="background:transparent;">
+  <div class="kaart">
+    <div class="kaart-header">
+
+    </div>
+    <div class="kaart-body">
+
+    </div>
+  </div>
+</body>
+</html>
